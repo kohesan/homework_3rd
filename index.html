@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>myMemoPad</title>
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <link rel='stylesheet' href='css/reset.css'>
+  <link rel="stylesheet" href="css/sample.css">
+  <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />   
+  <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+  <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+  <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+  <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>MemoPad</h1>
+  </header>
+  <main>
+    <input type="text" id="key" placeholder="ここにタイトルが入ります">
+    <button id="button_k">音声入力</button>
+    <textarea id="memo" placeholder="ここにテキストが入ります"></textarea>
+    <button id="button_v">音声入力</button>
+    <ul>
+      <li id="save">検索</li>
+      <li id="clear">検索履歴削除</li>
+    </ul>
+
+  </main>
+
+  <div class='memo'>
+    あなたの検索履歴はこちら↓
+  </div>
+  <ul id="list">
+    <!-- ここに追加データが挿入される -->
+  </ul>
+  <script src="js/memo.js"></script>
+  <footer>
+    <small>memo</small>
+  </footer>
+</body>
+
+</html>
